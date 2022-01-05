@@ -25,6 +25,7 @@ class Solution(object):
         k=(a-1)*(b-1)
         return(k)
         
+        
 Success
 Details 
 Runtime: 74 ms, faster than 16.16% of Python online submissions for Maximum Product of Two Elements in an Array.
