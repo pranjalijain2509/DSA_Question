@@ -23,6 +23,7 @@ class Solution(object):
             li.append(tp)
         return(max(li))
         
+
 Success
 Details 
 Runtime: 26 ms, faster than 24.16% of Python online submissions for Find the Highest Altitude.
