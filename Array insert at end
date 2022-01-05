@@ -1,0 +1,27 @@
+Array insert at end
+
+Example 1:
+Input:
+sizeOfArray = 6
+arr[] = {1, 2, 3, 4, 5}
+element = 90
+Output: 1 2 3 4 5 90
+Explanation: After inserting 90 at the
+end, we have array elements as 
+1 2 3 4 5 90.
+
+Example 2:
+Input:
+sizeOfArray = 4
+arr[] = {1, 2, 3}
+element = 50
+Output: 1 2 3 50
+Explanation: After inserting 50 at the 
+end, we have array elements as 
+1 2 3 50.
+
+Solution-
+arr= [1, 2, 3]
+element = 50
+arr.append(element)
+print(arr)
