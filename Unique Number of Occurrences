@@ -34,7 +34,6 @@ class Solution(object):
         else:
             return False
 
-        
 Success
 Details 
 Runtime: 26 ms, faster than 48.61% of Python online submissions for Unique Number of Occurrences.
