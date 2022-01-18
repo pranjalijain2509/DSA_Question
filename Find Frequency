@@ -1,0 +1,30 @@
+# Find Frequency
+
+n=int(input())
+arr = list(map(int,input().split()))
+t=int(input())
+for i in range(t):
+    l=0
+    r=len(arr)-1
+    nu=int(input())
+    while l<=r:
+        mid=(l+r)//2
+        if arr[mid] > nu:
+            r = mid - 1                
+        elif arr[mid] < nu:
+            l = mid + 1
+        else:
+            lo=mid
+            hi = mid
+            while lo-1 >= 0 and arr[lo-1] == nu:
+                lo -= 1
+            while hi+1 < len(arr) and arr[hi+1] == nu:
+                hi += 1
+            if lo==hi:
+                print(1)
+            else:
+                print((hi-lo)+1)
+            break
+        
+    else:
+        print(0)
