@@ -1,0 +1,19 @@
+#First 1 in Array
+n=int(input())
+nums=list(map(int,input().split()))
+low=0
+hig=len(nums)-1
+while low<=hig:
+    mid = low+(hig-low)//2
+    if nums[0]==1:
+        print(1)
+        break
+    if nums[mid]==1 and nums[mid-1]==0:
+        print(mid+1)
+        break
+    elif nums[mid]==0:
+        low=mid+1
+    else:
+        hig=mid-1
+else:
+    print(-1)
