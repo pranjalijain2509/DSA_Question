@@ -1,0 +1,41 @@
+1290. Convert Binary Number in a Linked List to Integer
+Given head which is a reference node to a singly-linked list. The value of each node in the linked list is either 0 or 1. The linked list holds the binary representation of a number.
+Return the decimal value of the number in the linked list.
+
+Example 1:
+Input: head = [1,0,1]
+Output: 5
+Explanation: (101) in base 2 = (5) in base 10
+
+Example 2:
+Input: head = [0]
+Output: 0
+ 
+Constraints:
+The Linked List is not empty.
+Number of nodes will not exceed 30.
+Each node's value is either 0 or 1.
+
+Solution-
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution(object):
+    def getDecimalValue(self, head):
+        st=""
+        cur=head
+        while cur!=None:
+            if cur==None:
+                return None
+            st+=str(cur.val)
+            cur=cur.next
+        return int(st,2)
+
+
+        
+Success
+Details 
+Runtime: 29 ms, faster than 21.58% of Python online submissions for Convert Binary Number in a Linked List to Integer.
+Memory Usage: 13.5 MB, less than 15.42% of Python online submissions for Convert Binary Number in a Linked List to Intege
