@@ -26,5 +26,6 @@ element = 50
 arr.append(element)
 print(arr)
 
+
 Output-
 [1,2,3,50]
